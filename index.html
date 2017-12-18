@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Codecentric CV-Generator">
+    <meta name="author" content="Alena Ulrich">
+    <title>Codecentric CV-Generator</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <br/>
+    <div class="container">
+        <nav class="nav nav-tabs" id="myTab">
+            <a class="nav-item nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Home</a>
+            <a class="nav-item nav-link" id="search-tab" data-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="false">Search CV</a>
+            <a class="nav-item nav-link" id="new-cv-tab" data-toggle="tab" href="#new-cv" role="tab" aria-controls="new-cv" aria-selected="false">New CV</a>
+        </nav>
+        <div class="jumbotron">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade" id="home" aria-labelledby="home-tab">
+                    <h1>Codecentric CV-Generator</h1>
+                    <p>for the inside used CVs</p>
+                </div>
+                <div class="tab-pane fade" id="search" aria-labelledby="search-tab">
+                    <form>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Add name">
+                            <button class="btn btn-primary btn-sm"><i class="zmdi zmdi-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="new-cv" aria-labelledby="new-cv-tab">
+                    <h2>Start to build your new CV now</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Add your first name">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Add your last name"></br>
+                            <p>etc</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <h1>Codecentric CV-Generator</h1>
+            <p>for the inside used CVs</p>
+        </div>
+        <script>
+            $(function () {
+                $('#myTab a:last').tab('show')
+            })
+        </script>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+</body>
+</html>
