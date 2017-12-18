@@ -54,9 +54,13 @@
             <p>for the inside used CVs</p>
         </div>
         <script>
-            $(function () {
-                $('#myTab a:last').tab('show')
+            $('#myTab a').click(function (e) {
+                e.preventDefault()
+                $(this).tab('show')
             })
+/*            $(function () {
+                $('#myTab a:last').tab('show')
+            })*/
         </script>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
