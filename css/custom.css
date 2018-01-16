@@ -1,0 +1,22 @@
+input.custom {
+    padding: 6px 12px;
+    border: solid 1px #42d3a5;
+    border-radius: 0;
+    height: 36px;
+    color: #121212;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+button.custom {
+    color: #42d3a5;
+    font-size: 16px;
+}
+
+* {
+  .border-radius(0) !important;
+}
+
+#field {
+    margin-bottom:20px;
+}
