@@ -3,16 +3,17 @@ input.custom {
     border: solid 1px #42d3a5;
     border-radius: 0;
     height: 36px;*/
-    color: #121212;
+    /*color: #121212;*/
     /*font-size: 16px;
     background-color: transparent;
     margin-bottom: 15px;
     max-width: 320px;*/
 }
 
-button.custom {
-    color: #42d3a5;
-    font-size: 16px;
+div.custom {
+/*    color: #42d3a5;
+    font-size: 16px;*/
+    float: right !important;
 }
 
 * {
