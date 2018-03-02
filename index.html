@@ -81,48 +81,45 @@
 
 
                 <form>
-                    <div class="row" id="language">
+                    <div class="row" id="languageInput">
 
-                        <label class="col-form-label col-2" for="language1">Language</label>
+                        <label class="col-form-label col-2" for="lang">Language</label>
 
                         <div class="col-5">
-                        <input type="text" class="form-control input-md" id="language1" name="prof1" autocomplete="off" placeholder="Enter your language">
+                        <input type="text" class="form-control input-md" id="lang" name="prof1" autocomplete="off" placeholder="Enter your language">
                         </div>
 
                         <div class="col-1">
                         <button id="b1" class="btn btn-light add-more float-right">+</button>
                         </div>
 
-
-
                     </div>
-                    <div class="row" id="language2">
 
-                        <div class="col-2"></div>
 
-                        <div class="col-5">
-                            <input type="text" class="form-control input-md" id="language2" name="prof1" autocomplete="off" placeholder="Enter your language">
-                        </div>
 
-                        <div class="col-1">
-                            <button id="remove' + (next - 1) + '" class="btn btn-light remove-me" type="button">-</button>
-                        </div>
 
-                    </div>
+
+
+
+
 
                     <script>
                         $(document).ready(function(){
                             var next = 1;
                             $(".add-more").click(function(e){
                                 e.preventDefault();
-                                var addto = "#language" + next;
-                                var addRemove = "#language" + (next);
+                                var addto = "#languageInput";
                                 next = next + 1;
-                                var newIn = '<input  autocomplete="off" class="form-control input-md" id="language' + next + '" name="language' + next + '" type="text" placeholder="Enter your language">';
+                                var addRemove = "#deleteafter" + (next);
+                                var newLanguage = document.getElementById("lang").value;
+                                var newIn = '<div class="row" id="language' + next +'"><div class="col-2"></div><div class="col-5" id="deleteafter' + next + '"><input type="text" class="form-control input-md" id="language' + next +'" name="language' + next +'" autocomplete="off" value="' + newLanguage + '"></div>'
                                 var newInput = $(newIn);
-                                var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-light remove-me" type="button">-</button>';
+                                var removeBtn = '<div class="col-1"><button id="remove' + (next) +'" class="btn btn-light remove-me float-right">-</button></div></div>';
+
+                                document.getElementById("lang").value = "";
+
                                 var removeButton = $(removeBtn);
-                                $(addto).after(newInput);
+                                $(addto).before(newInput);
                                 $(addRemove).after(removeButton);
                                 $("#language" + next).attr('data-source',$(addto).attr('data-source'));
 
