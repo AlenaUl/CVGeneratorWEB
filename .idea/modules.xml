@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CVGeneratorWEB.iml" filepath="$PROJECT_DIR$/CVGeneratorWEB.iml" />
+      <module fileurl="file://$USER_HOME$/workspace/CVGenerator/JPAProject.iml" filepath="$USER_HOME$/workspace/CVGenerator/JPAProject.iml" />
     </modules>
   </component>
 </project>
