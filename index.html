@@ -81,7 +81,7 @@
 
 
                 <form>
-                    <div class="row" id="languageInput">
+                    <div class="form-group row" id="languageInput">
 
                         <label class="col-form-label col-2" for="lang">Language</label>
 
@@ -90,12 +90,12 @@
                         </div>
 
                         <div class="col-1">
-                        <button id="b1" class="btn btn-outline-secondary add-more float-right">+</button>
+                        <button id="b1" class="btn btn-outline-secondary btn-block add-more float-right">+</button>
                         </div>
 
                     </div>
 
-                    
+
 
 
                     <script>
@@ -107,9 +107,9 @@
                                 next = next + 1;
                                 var addRemove = "#deleteafter" + (next);
                                 var newLanguage = document.getElementById("lang").value;
-                                var newIn = '<div class="row" id="language' + next +'"><div class="col-2"></div><div class="col-5" id="deleteafter' + next + '"><input type="text" class="form-control input-md" id="language' + next +'" name="language' + next +'" autocomplete="off" value="' + newLanguage + '"></div>'
+                                var newIn = '<div class="form-group row" id="language' + next +'"><div class="col-2"></div><div class="col-5" id="deleteafter' + next + '"><input type="text" class="form-control input-md" id="language' + next +'" name="language' + next +'" autocomplete="off" value="' + newLanguage + '"></div>'
                                 var newInput = $(newIn);
-                                var removeBtn = '<div class="col-1"><button id="remove' + (next) +'" class="btn btn-outline-secondary remove-me float-right">-</button></div></div>';
+                                var removeBtn = '<div class="col-1"><button id="remove' + (next) +'" class="btn btn-outline-secondary btn-block remove-me float-right">-</button></div></div>';
 
                                 document.getElementById("lang").value = "";
 
