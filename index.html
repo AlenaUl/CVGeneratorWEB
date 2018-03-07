@@ -114,7 +114,7 @@
                                 document.getElementById("lang").value = "";
 
                                 var removeButton = $(removeBtn);
-                                $(addto).before(newInput);
+                                $(addto).after(newInput);
                                 $(addRemove).after(removeButton);
                                 $("#language" + next).attr('data-source',$(addto).attr('data-source'));
 
