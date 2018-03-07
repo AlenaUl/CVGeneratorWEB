@@ -90,17 +90,12 @@
                         </div>
 
                         <div class="col-1">
-                        <button id="b1" class="btn btn-light add-more float-right">+</button>
+                        <button id="b1" class="btn btn-outline-secondary add-more float-right">+</button>
                         </div>
 
                     </div>
 
-
-
-
-
-
-
+                    
 
 
                     <script>
@@ -114,7 +109,7 @@
                                 var newLanguage = document.getElementById("lang").value;
                                 var newIn = '<div class="row" id="language' + next +'"><div class="col-2"></div><div class="col-5" id="deleteafter' + next + '"><input type="text" class="form-control input-md" id="language' + next +'" name="language' + next +'" autocomplete="off" value="' + newLanguage + '"></div>'
                                 var newInput = $(newIn);
-                                var removeBtn = '<div class="col-1"><button id="remove' + (next) +'" class="btn btn-light remove-me float-right">-</button></div></div>';
+                                var removeBtn = '<div class="col-1"><button id="remove' + (next) +'" class="btn btn-outline-secondary remove-me float-right">-</button></div></div>';
 
                                 document.getElementById("lang").value = "";
 
@@ -138,26 +133,26 @@
                 <h3>Qualification</h3></br>
                 <form>
                     <div class="form-group row">
-                        <label class="col-form-label col-sm-2" for="place">Place</label>
-                        <div class="col-md-4">
+                        <label class="col-form-label col-2" for="place">Place</label>
+                        <div class="col-6">
                             <input type="text" class="form-control input-md" id="place" placeholder="Enter place">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-form-label col-sm-2" for="profil">Profil</label>
-                        <div class="col-md-4">
+                        <label class="col-form-label col-2" for="profil">Profil</label>
+                        <div class="col-6">
                             <input type="text" class="form-control input-md" id="profil" placeholder="Enter profil">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-form-label col-sm-2" for="start_date">Start date</label>
-                        <div class="col-md-4">
+                        <label class="col-form-label col-2" for="start_date">Start date</label>
+                        <div class="col-6">
                             <input type="date" class="form-control input-md" id="start_date" placeholder="Enter start date">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-form-label col-sm-2" for="end_date">End date</label>
-                        <div class="col-md-4">
+                        <label class="col-form-label col-2" for="end_date">End date</label>
+                        <div class="col-6">
                             <input type="date" class="form-control input-md" id="end_date" placeholder="Enter end date">
                         </div>
                     </div>
@@ -168,8 +163,8 @@
 
                 <h3>Skills</h3></br>
                 <form>
-                    <div class="form-group row">
-                        <div class="input-group col-md-4">
+                    <div class="form-group row col">
+                        <div class="input-group row col-4">
                         <select class="form-control custom-select" id="selectCategory">
                             <option selected>Choose category</option>
                             <option value="1">Methodiken</option>
@@ -179,16 +174,113 @@
                             <option value="5">Betriebssysteme</option>
                             <option value="6">Werkzeuge</option>
                         </select>
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button">Add custom category</button>
                         </div>
+                        <div class="col-md-4" id="toolName">
+                            <input autocomplete="off" class="custom form-control input-md" id="category1" name="prof1" type="text" placeholder="Skala, Kibana, Java, etc"/>
+                        </div>
+                        <div class="custom col-1">
+                            <button id="b" class="btn btn-outline-secondary " type="button">+</button>
                         </div>
                     </div>
-                    <div class="col-md-4" id="toolName">
-                        <input autocomplete="off" class="custom form-control input-md pull-left" id="category1" name="prof1" type="text" placeholder="Skala, Kibana, Java, etc" data-items="8"/>
 
+                    <div class="custom form-group col-2">
+                        <button class="btn btn-outline-secondary" type="button">Add category</button>
                     </div>
-                    <button id="b" class="btn add-more pull-right" type="button">+</button>
+                    <div class="custom form-group col-2">
+                        <button class="btn btn-outline-secondary" type="button">Add custom category</button>
+                    </div>
+
+                    <script>
+                        // Add custom category
+                    </script>
+                    <script>
+                        // Add toolName
+                    </script>
+                    <script>
+                        // Add skill (form)
+                    </script>
+                </form>
+
+                <h3>Projects</h3></br>
+                <form>
+                    <div class="form-group row">
+                        <label class="col-form-label col-2" for="project_start_date">Start date</label>
+                        <div class="col-6">
+                            <input type="date" class="form-control input-md" id="project_start_date" placeholder="Enter start date">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-2" for="project_end_date">End date</label>
+                        <div class="col-6">
+                            <input type="date" class="form-control input-md" id="project_end_date" placeholder="Enter end date">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-2" for="customer">Customer</label>
+                        <div class="col-6">
+                            <input type="text" class="form-control input-md" id="customer" placeholder="Enter customer">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-2" for="topic">Topic</label>
+                        <div class="col-6">
+                            <input type="text" class="form-control input-md" id="topic" placeholder="Enter topic">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-2" for="part">Part</label>
+                        <div class="col-6">
+                            <input type="text" class="form-control input-md" id="part" placeholder="Enter your part in this project">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-2" for="technology">Technologies</label>
+                        <div class="col-5">
+                            <input type="text" class="form-control input-md" id="technology" placeholder="Enter technology">
+                        </div>
+                        <div class="col-1">
+                            <button id="but1" class="btn btn-outline-secondary float-right">+</button>
+                        </div>
+                    </div>
+                    <div class="custom form-group col-2">
+                        <button id="but2" class="btn btn-outline-secondary">Add project</button>
+                    </div>
+                    <script>
+                        // Add technology
+                    </script>
+                    <script>
+                        // Add project
+                    </script>
+                </form>
+                <h3>Presentations</h3></br>
+                <form>
+                    <div class="form-group row">
+                        <label class="col-form-label col-2" for="theme">Theme</label>
+                        <div class="col-6">
+                            <input type="text" class="form-control input-md" id="theme" placeholder="Enter theme">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-2" for="conference">Conference</label>
+                        <div class="col-6">
+                            <input type="text" class="form-control input-md" id="conference" placeholder="Enter conference name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-2" for="community_place">Place</label>
+                        <div class="col-6">
+                            <input type="text" class="form-control input-md" id="community_place" placeholder="Enter conference place">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-2" for="year">Year</label>
+                        <div class="col-6">
+                            <input type="text" class="form-control input-md" id="year" placeholder="Enter year">
+                        </div>
+                    </div>
+                    <div class="custom form-group col-2">
+                        <button id="but3" class="btn btn-outline-secondary">Add presentation</button>
+                    </div>
                 </form>
             </div>
         </div>
